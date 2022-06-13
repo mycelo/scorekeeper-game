@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scorekeeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+    <div class="columns is-mobile is-centered">
+        <div class="column is-half">
+            <div class="container"> 
+                <div class="card">
+                    <div class="column">
+                <div class="card-content">
+                    <div class="block">
+                        <div class="column">
+                            <h1 class="title">Scorekeeper</h1>
+                        </div>
+                    </div>
+                    <div class="score-count">
+
+                        <div class="block">
+                            <div class="column">
+                                <h3 class="title is-3"><span id="count1">0</span> to <span id="count2">0</span></h3>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="block">
+                                <label for="score"><strong>Playing to</strong></label>
+                                <span class="select is-small">
+                                    <select name="score" id="score">
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer-item">
+                <button id="player1" class="button is-primary">Player 1 +1</button>
+                <button id="player2" class="button is-success">Player 2 +1</button>
+                <button id="reset" class="button is-danger">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css">
+    </body>
+    </html>
